@@ -1,4 +1,29 @@
 <div class="left-sidebar">
-  Left Sidebar Application in
-  <img src="http://localhost:3002/assets/logo.png" class="angular-logo">
+  <nav>
+    <ul>
+      <li>
+        <a
+          routerLink="/first"
+          routerLinkActive="active"
+          ariaCurrentWhenActive="page"
+          >First Component</a
+        >
+      </li>
+      <li>
+        <a
+          routerLink="/second"
+          routerLinkActive="active"
+          ariaCurrentWhenActive="page"
+          >Second Component</a
+        >
+      </li>
+    </ul>
+  </nav>
+  <router-outlet></router-outlet>
+  <p>
+    <br />
+    Left Sidebar Application in
+    <br />
+  </p>
+  <img src="http://localhost:3002/assets/logo.png" class="angular-logo" />
 </div>
