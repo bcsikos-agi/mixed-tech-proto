@@ -15,7 +15,7 @@ import { SecondComponent } from './second/second.component';
     BrowserModule,
     RouterModule.forRoot([
       {path: 'first', component: FirstComponent},
-      {path: 'second', component: SecondComponent},
+      { path: 'second', component: SecondComponent }
     ]),
   ],
   providers: [{provide: APP_BASE_HREF, useValue: '/'}],

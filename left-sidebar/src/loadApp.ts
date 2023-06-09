@@ -9,7 +9,8 @@ if (environment.production) {
   enableProdMode();
 }
 
-const mount = ()=>{
+const mount = (params:any) => {
+  console.log(params)
   platformBrowserDynamic().bootstrapModule(AppModule)
     .catch(err => console.error(err));
 }
