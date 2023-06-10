@@ -1,18 +1,22 @@
 import React, { useEffect, useRef } from "react";
 import { mount } from "leftSideBar/leftSideBar";
+import { useHistory } from 'react-router-dom'
 import "./LeftSidebar.css";
 
 const LeftSidebarModule = () => {
   const ref = useRef(null);
+  const history = useHistory()
+
   useEffect(() => {
-    mount({
+    const { onParentNavigate } = mount(ref.current, {
       onNavigate() {
         console.log('nav event')
       },
       korte: 'alma'
     });
+    history.listen(onParentNavigate)
   }, []);
-  return <div className="left-sidebar-module"><app-root></app-root></div>;
+  return <div className="left-sidebar-module"><app-angular></app-angular></div>;
 };
 
 export default LeftSidebarModule;
