@@ -27,7 +27,7 @@ const mount = (el,
     return {
         // MF API upstream
         onParentNavigate({ pathname: nextPathname }) {
-            console.log(`onParentNav: ${nextPathname}`)
+            console.log(`onParentNavHeader: ${nextPathname}`)
             const { pathname } = history.location
             if (pathname !== nextPathname) {
                 history.push(nextPathname)

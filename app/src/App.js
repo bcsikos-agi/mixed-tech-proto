@@ -20,7 +20,7 @@ function App() {
         </header>
         <div className="content">
           <LeftSidebar></LeftSidebar>
-          <RightSidebar></RightSidebar>
+          {/* <RightSidebar></RightSidebar> */}
         </div>
         <footer className="footer-container">
           <Footer></Footer>

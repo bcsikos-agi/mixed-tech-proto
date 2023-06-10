@@ -10,12 +10,14 @@ if (environment.production) {
 
 const mount = (ref: any, params: any) => {
   console.log(params);
+  const { onNavigate } = params; // HOW TO listen on angular router.navigate event?
   let goTo: any;
   platformBrowserDynamic()
     .bootstrapModule(AppModule)
     .then((app) => {
       console.log(app);
       goTo = app.instance.goToItems;
+      app.instance.addListener(onNavigate);
     })
     .catch((err) => console.error(err));
   return {

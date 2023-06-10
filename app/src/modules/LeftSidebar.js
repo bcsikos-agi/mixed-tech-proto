@@ -9,8 +9,8 @@ const LeftSidebarModule = () => {
 
   useEffect(() => {
     const { onParentNavigate } = mount(ref.current, {
-      onNavigate() {
-        console.log('nav event')
+      onNavigate(path) {
+        console.log('onModuleNavAng: ' + path)
       },
       korte: 'alma'
     });
