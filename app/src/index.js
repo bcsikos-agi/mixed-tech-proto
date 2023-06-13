@@ -3,11 +3,11 @@
  * - Navigation (in React and in Angular)
  * - Communication (LP)
  * - Authentication
- * - Development
+ * - Development (MP)
  *      - BasePath, PublicPath
  * - Performance
  *      - Lazy Loading
- *      - Failback
+ *      - Failback (https://www.copycat.dev/blog/react-suspense/)
  *      - Dependency Sharing
  * - Style
  *      - CSS Scoping

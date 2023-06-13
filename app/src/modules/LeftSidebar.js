@@ -15,7 +15,7 @@ const LeftSidebarModule = () => {
       korte: 'alma'
     });
     history.listen(onParentNavigate)
-  }, []);
+  });
   return <div className="left-sidebar-module"><app-angular></app-angular></div>;
 };
 
